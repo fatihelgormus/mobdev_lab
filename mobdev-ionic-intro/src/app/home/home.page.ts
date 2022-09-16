@@ -6,7 +6,10 @@ import { Component } from '@angular/core';
   styleUrls: ['home.page.scss'],
 })
 export class HomePage {
-
-  constructor() {}
+  myVariable: string = 'The force is with me!';
+  updateMyValue() {
+    this.myVariable = 'Now the force is even stronger!';
+    }
+    
 
 }
