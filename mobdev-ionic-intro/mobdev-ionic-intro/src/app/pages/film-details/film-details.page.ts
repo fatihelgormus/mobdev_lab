@@ -1,9 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-<<<<<<< HEAD
 import { ActivatedRoute } from '@angular/router';
 import { ApiService } from '../../services/api.service';
-=======
->>>>>>> parent of 23843e8 (last week some changes)
 
 @Component({
   selector: 'app-film-details',
@@ -12,7 +9,6 @@ import { ApiService } from '../../services/api.service';
 })
 export class FilmDetailsPage implements OnInit {
 
-<<<<<<< HEAD
   film: any;
 
   constructor(private activatedRoute: ActivatedRoute, private api: ApiService) { }
@@ -22,11 +18,6 @@ export class FilmDetailsPage implements OnInit {
     this.api.getFilm(id).subscribe(res => {
       this.film = res;
     });
-=======
-  constructor() { }
-
-  ngOnInit() {
->>>>>>> parent of 23843e8 (last week some changes)
   }
 
 }
